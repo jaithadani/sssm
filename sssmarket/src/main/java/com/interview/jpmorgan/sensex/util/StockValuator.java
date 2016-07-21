@@ -77,7 +77,6 @@ public class StockValuator{
 		double allStockPrices = 1;
 		for(Stock stock:stocks){
 			allStockPrices = (double)stock.getPrice()*allStockPrices;
-			System.out.println(stock.getPrice());
 		}
 		
 		double index =Math.pow(allStockPrices,(double)(1.0/stocks.size()));
